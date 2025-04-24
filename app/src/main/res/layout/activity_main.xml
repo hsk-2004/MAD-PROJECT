@@ -1,0 +1,63 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:id="@+id/heroImage"
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:layout_marginTop="300dp"
+      android:src="@drawable/hero_image"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.099"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="Reach new heights with the jobs app."
+      android:textColor="@android:color/white"
+      android:textSize="40sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/btnLoginSignup"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/heroImage"
+      app:layout_constraintVertical_bias="0.5" />
+
+  <Button
+      android:id="@+id/btnLoginSignup"
+      android:layout_width="250dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@android:color/white"
+      android:padding="15dp"
+      android:text="LOGIN/SIGNUP"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@id/troubleLoggingIn"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintVertical_bias="0.9" />
+
+  <TextView
+      android:id="@+id/troubleLoggingIn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="TROUBLE LOGGING IN?"
+      android:textColor="@android:color/white"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
